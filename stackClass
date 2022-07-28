@@ -1,0 +1,31 @@
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+import csv
+
+class stack():
+    def __init__(self):
+        self.items=[] #initialize empty stack
+    def push(self, data):
+        self.items.append(data)
+    def printStack(self):
+        print(self.items[::-1])
+    def pop(self):
+        self.items.pop()
+    def peek(self):
+        print(self.items[0])
+    def printReverse(self):
+        #TODO print the stack in reverse
+    def peekMiddle(self):
+        #TODO implement this 
+
+
+testStack=stack() #Tests to see it works
+testStack.push(1)
+testStack.push(3)
+testStack.push(5)
+testStack.printStack()
+testStack.pop()
+testStack.pop()
+testStack.printStack()
+testStack.peek()
