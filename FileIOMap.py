@@ -13,4 +13,6 @@ for line in allText:
     line = line.lower()
     if line in letter_count:
         letter_count[line]+=1
+openFile.close()
 print(letter_count)
+
