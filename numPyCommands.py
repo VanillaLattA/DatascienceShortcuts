@@ -48,3 +48,27 @@ np.random.rand(2,2) # 2 by 2 rand between 0 and 1
 
 #identity matrix
 np.identity(5)
+
+#be careful when copying arrays, sometimes the pointers are changed
+#this is how you copy 
+print("\n")
+a= np.array([3])
+b= np.array([2])
+a = b.copy()
+print(b)
+#new memory is allocated for b and is not referencing a
+
+print(np.matmul(a,b)) #takes the linear multiplication of 2 variables
+#many other functions for linear algebra to find determinant etc
+
+
+#statistics
+np.min(a) # find the min of matrix
+
+
+print(np.vstack([a,b]))#stacks the array on top of each other
+#use hstack for horizontal stack
+
+
+#Miscellaneous 
+#you can index files! check numpy website
